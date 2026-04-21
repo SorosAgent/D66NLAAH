@@ -16,62 +16,77 @@ Q.ethnic_minority = 8.6;
 Q.affluent_conservative = 30;
 
 Q.classes = ['urban_progressive', 'urban_worker', 'suburban_middle', 'rural', 'ethnic_minority', 'affluent_conservative'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['d66', 'gl', 'cda', 'pvda', 'vvd', 'ja21', 'pvv', 'pvdd', 'sp', 'cu', 'fvd', 'bbb','other'];
 
 // Support for party by social group
-// they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.urban_progressive_spd = 65;
-Q.urban_progressive_kpd = 20;
-Q.urban_progressive_z = 5;
-Q.urban_progressive_ddp = 0;
-Q.urban_progressive_dvp = 0;
-Q.urban_progressive_dnvp = 5;
-Q.urban_progressive_nsdap = 0;
+// they don't have to sum to 100 since the electoral calculations will be normalicdaed.
+Q.urban_progressive_d66 = 65;
+Q.urban_progressive_gl = 20;
+Q.urban_progressive_cda = 5;
+Q.urban_progressive_pvda = 0;
+Q.urban_progressive_vvd = 0;
+Q.urban_progressive_ja21 = 5;
+Q.urban_progressive_pvv = 0;
+Q.urban_progressive_pvdd = 0;
+Q.urban_progressive_sp = 0;
+Q.urban_progressive_cu = 0;
+Q.urban_progressive_fvd = 0;
+Q.urban_progressive_bbb = 0;
 Q.urban_progressive_other = 10;
 
-Q.urban_worker_spd = 5;
-Q.urban_worker_kpd = 0;
-Q.urban_worker_z = 5;
-Q.urban_worker_ddp= 10;
-Q.urban_worker_dvp = 25;
-Q.urban_worker_dnvp = 25;
-Q.urban_worker_nsdap = 10;
+Q.urban_worker_d66 = 5;
+Q.urban_worker_gl = 0;
+Q.urban_worker_cda = 5;
+Q.urban_worker_pvda= 10;
+Q.urban_worker_vvd = 25;
+Q.urban_worker_ja21 = 25;
+Q.urban_worker_pvv = 10;
+Q.urban_worker_pvdd = 0;
+Q.urban_worker_sp = 0;
+Q.urban_worker_cu = 0;
+Q.urban_worker_fvd = 0;
+Q.urban_worker_bbb = 0;
 Q.urban_worker_other = 10;
 
-Q.suburban_middle_spd = 5;
-Q.suburban_middle_kpd = 0;
-Q.suburban_middle_z = 10;
-Q.suburban_middle_ddp= 25;
-Q.suburban_middle_dvp = 25;
-Q.suburban_middle_dnvp = 10;
-Q.suburban_middle_nsdap = 5;
+Q.suburban_middle_d66 = 5;
+Q.suburban_middle_gl = 0;
+Q.suburban_middle_cda = 10;
+Q.suburban_middle_pvda= 25;
+Q.suburban_middle_vvd = 25;
+Q.suburban_middle_ja21 = 10;
+Q.suburban_middle_pvv = 5;
+Q.suburban_middle_pvdd = 5;
+Q.suburban_middle_sp = 5;
+Q.suburban_middle_cu = 5;
+Q.suburban_middle_fvd = 5;
+Q.suburban_middle_bbb = 5;
 Q.suburban_middle_other = 15;
 
-Q.rural_spd = 10;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 15;
-Q.rural_dnvp = 45;
-Q.rural_nsdap = 5;
+Q.rural_d66 = 10;
+Q.rural_gl = 0;
+Q.rural_cda = 5;
+Q.rural_pvda= 5;
+Q.rural_vvd = 15;
+Q.rural_ja21 = 45;
+Q.rural_pvv = 5;
 Q.rural_other = 10;
 
-Q.ethnic_minority_spd = 25;
-Q.ethnic_minority_kpd = 55;
-Q.ethnic_minority_z = 1;
-Q.ethnic_minority_ddp = 0;
-Q.ethnic_minority_dvp = 0;
-Q.ethnic_minority_dnvp = 5;
-Q.ethnic_minority_nsdap = 15;
+Q.ethnic_minority_d66 = 25;
+Q.ethnic_minority_gl = 55;
+Q.ethnic_minority_cda = 1;
+Q.ethnic_minority_pvda = 0;
+Q.ethnic_minority_vvd = 0;
+Q.ethnic_minority_ja21 = 5;
+Q.ethnic_minority_pvv = 15;
 Q.ethnic_minority_other = 9;
 
-Q.affluent_conservative_spd = 15;
-Q.affluent_conservative_kpd = 5;
-Q.affluent_conservative_z = 50;
-Q.affluent_conservative_ddp = 0;
-Q.affluent_conservative_dvp = 5;
-Q.affluent_conservative_dnvp = 5;
-Q.affluent_conservative_nsdap = 0;
+Q.affluent_conservative_d66 = 15;
+Q.affluent_conservative_gl = 5;
+Q.affluent_conservative_cda = 50;
+Q.affluent_conservative_pvda = 0;
+Q.affluent_conservative_vvd = 5;
+Q.affluent_conservative_ja21 = 5;
+Q.affluent_conservative_pvv = 0;
 Q.affluent_conservative_other = 10;
 !}
 go-to: election_algorithm
@@ -89,71 +104,71 @@ Q.ethnic_minority = 20;
 Q.affluent_conservative = 30;
 
 Q.classes = ['urban_progressive', 'urban_worker', 'suburban_middle', 'rural', 'ethnic_minority', 'affluent_conservative'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['d66', 'gl', 'cda', 'pvda', 'vvd', 'ja21', 'pvv', 'other'];
 
 // Support for party by social group
-// they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.urban_progressive_spd = 60;
-Q.urban_progressive_kpd = 20;
-Q.urban_progressive_z = 5;
-Q.urban_progressive_ddp = 0;
-Q.urban_progressive_dvp = 0;
-Q.urban_progressive_dnvp = 0;
-Q.urban_progressive_nsdap = 10;
+// they don't have to sum to 100 since the electoral calculations will be normalicdaed.
+Q.urban_progressive_d66 = 60;
+Q.urban_progressive_gl = 20;
+Q.urban_progressive_cda = 5;
+Q.urban_progressive_pvda = 0;
+Q.urban_progressive_vvd = 0;
+Q.urban_progressive_ja21 = 0;
+Q.urban_progressive_pvv = 10;
 Q.urban_progressive_other = 15;
 
-Q.urban_worker_spd = 5;
-Q.urban_worker_kpd = 0;
-Q.urban_worker_z = 5;
-Q.urban_worker_ddp= 5;
-Q.urban_worker_dvp = 10;
-Q.urban_worker_dnvp = 20;
-Q.urban_worker_nsdap = 30;
+Q.urban_worker_d66 = 5;
+Q.urban_worker_gl = 0;
+Q.urban_worker_cda = 5;
+Q.urban_worker_pvda= 5;
+Q.urban_worker_vvd = 10;
+Q.urban_worker_ja21 = 20;
+Q.urban_worker_pvv = 30;
 Q.urban_worker_other = 15;
 
-Q.suburban_middle_spd = 5;
-Q.suburban_middle_kpd = 0;
-Q.suburban_middle_z = 5;
-Q.suburban_middle_ddp = 10;
-Q.suburban_middle_dvp = 20;
-Q.suburban_middle_dnvp = 10;
-Q.suburban_middle_nsdap = 25;
+Q.suburban_middle_d66 = 5;
+Q.suburban_middle_gl = 0;
+Q.suburban_middle_cda = 5;
+Q.suburban_middle_pvda = 10;
+Q.suburban_middle_vvd = 20;
+Q.suburban_middle_ja21 = 10;
+Q.suburban_middle_pvv = 25;
 Q.suburban_middle_other = 15;
 
-Q.rural_spd = 5;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 10;
-Q.rural_dnvp = 20;
-Q.rural_nsdap = 25;
+Q.rural_d66 = 5;
+Q.rural_gl = 0;
+Q.rural_cda = 5;
+Q.rural_pvda= 5;
+Q.rural_vvd = 10;
+Q.rural_ja21 = 20;
+Q.rural_pvv = 25;
 Q.rural_other = 15;
 
-Q.ethnic_minority_spd = 20;
-Q.ethnic_minority_kpd = 50;
-Q.ethnic_minority_z = 0;
-Q.ethnic_minority_ddp = 0;
-Q.ethnic_minority_dvp = 0;
-Q.ethnic_minority_dnvp = 5;
-Q.ethnic_minority_nsdap = 25;
+Q.ethnic_minority_d66 = 20;
+Q.ethnic_minority_gl = 50;
+Q.ethnic_minority_cda = 0;
+Q.ethnic_minority_pvda = 0;
+Q.ethnic_minority_vvd = 0;
+Q.ethnic_minority_ja21 = 5;
+Q.ethnic_minority_pvv = 25;
 Q.ethnic_minority_other = 5;
 
-Q.affluent_conservative_spd = 10;
-Q.affluent_conservative_kpd = 5;
-Q.affluent_conservative_z = 50;
-Q.affluent_conservative_ddp = 0;
-Q.affluent_conservative_dvp = 5;
-Q.affluent_conservative_dnvp = 5;
-Q.affluent_conservative_nsdap = 10;
+Q.affluent_conservative_d66 = 10;
+Q.affluent_conservative_gl = 5;
+Q.affluent_conservative_cda = 50;
+Q.affluent_conservative_pvda = 0;
+Q.affluent_conservative_vvd = 5;
+Q.affluent_conservative_ja21 = 5;
+Q.affluent_conservative_pvv = 10;
 Q.affluent_conservative_other = 5;
 
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
-Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
-Q.nsdap_r = 10;
+Q.d66_r = 25;
+Q.gl_r = 10;
+Q.cda_r = 15;
+Q.pvda_r = 10;
+Q.vvd_r = 10;
+Q.ja21_r = 14;
+Q.pvv_r = 10;
 Q.other_r = 5;
 !}
 go-to: election_algorithm
@@ -171,71 +186,71 @@ Q.ethnic_minority = 33;
 Q.affluent_conservative = 30;
 
 Q.classes = ['urban_progressive', 'urban_worker', 'suburban_middle', 'rural', 'ethnic_minority', 'affluent_conservative'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['d66', 'gl', 'cda', 'pvda', 'vvd', 'ja21', 'pvv', 'other'];
 
 // Support for party by social group
-// they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.urban_progressive_spd = 55;
-Q.urban_progressive_kpd = 20;
-Q.urban_progressive_z = 5;
-Q.urban_progressive_ddp = 0;
-Q.urban_progressive_dvp = 0;
-Q.urban_progressive_dnvp = 0;
-Q.urban_progressive_nsdap = 15;
+// they don't have to sum to 100 since the electoral calculations will be normalicdaed.
+Q.urban_progressive_d66 = 55;
+Q.urban_progressive_gl = 20;
+Q.urban_progressive_cda = 5;
+Q.urban_progressive_pvda = 0;
+Q.urban_progressive_vvd = 0;
+Q.urban_progressive_ja21 = 0;
+Q.urban_progressive_pvv = 15;
 Q.urban_progressive_other = 5;
 
-Q.urban_worker_spd = 0;
-Q.urban_worker_kpd = 0;
-Q.urban_worker_z = 5;
-Q.urban_worker_ddp = 4;
-Q.urban_worker_dvp = 4;
-Q.urban_worker_dnvp = 15;
-Q.urban_worker_nsdap = 70;
+Q.urban_worker_d66 = 0;
+Q.urban_worker_gl = 0;
+Q.urban_worker_cda = 5;
+Q.urban_worker_pvda = 4;
+Q.urban_worker_vvd = 4;
+Q.urban_worker_ja21 = 15;
+Q.urban_worker_pvv = 70;
 Q.urban_worker_other = 5;
 
-Q.suburban_middle_spd = 5;
-Q.suburban_middle_kpd = 0;
-Q.suburban_middle_z = 5;
-Q.suburban_middle_ddp = 10;
-Q.suburban_middle_dvp = 10;
-Q.suburban_middle_dnvp = 10;
-Q.suburban_middle_nsdap = 60;
+Q.suburban_middle_d66 = 5;
+Q.suburban_middle_gl = 0;
+Q.suburban_middle_cda = 5;
+Q.suburban_middle_pvda = 10;
+Q.suburban_middle_vvd = 10;
+Q.suburban_middle_ja21 = 10;
+Q.suburban_middle_pvv = 60;
 Q.suburban_middle_other = 5;
 
-Q.rural_spd = 0;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp = 0;
-Q.rural_dvp = 5;
-Q.rural_dnvp = 15;
-Q.rural_nsdap = 65;
+Q.rural_d66 = 0;
+Q.rural_gl = 0;
+Q.rural_cda = 5;
+Q.rural_pvda = 0;
+Q.rural_vvd = 5;
+Q.rural_ja21 = 15;
+Q.rural_pvv = 65;
 Q.rural_other = 5;
 
-Q.ethnic_minority_spd = 20;
-Q.ethnic_minority_kpd = 40;
-Q.ethnic_minority_z = 0;
-Q.ethnic_minority_ddp = 0;
-Q.ethnic_minority_dvp = 0;
-Q.ethnic_minority_dnvp = 0;
-Q.ethnic_minority_nsdap = 50;
+Q.ethnic_minority_d66 = 20;
+Q.ethnic_minority_gl = 40;
+Q.ethnic_minority_cda = 0;
+Q.ethnic_minority_pvda = 0;
+Q.ethnic_minority_vvd = 0;
+Q.ethnic_minority_ja21 = 0;
+Q.ethnic_minority_pvv = 50;
 Q.ethnic_minority_other = 5;
 
-Q.affluent_conservative_spd = 10;
-Q.affluent_conservative_kpd = 5;
-Q.affluent_conservative_z = 60;
-Q.affluent_conservative_ddp = 0;
-Q.affluent_conservative_dvp = 5;
-Q.affluent_conservative_dnvp = 5;
-Q.affluent_conservative_nsdap = 10;
+Q.affluent_conservative_d66 = 10;
+Q.affluent_conservative_gl = 5;
+Q.affluent_conservative_cda = 60;
+Q.affluent_conservative_pvda = 0;
+Q.affluent_conservative_vvd = 5;
+Q.affluent_conservative_ja21 = 5;
+Q.affluent_conservative_pvv = 10;
 Q.affluent_conservative_other = 5;
 
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
-Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
-Q.nsdap_r = 10;
+Q.d66_r = 25;
+Q.gl_r = 10;
+Q.cda_r = 15;
+Q.pvda_r = 10;
+Q.vvd_r = 10;
+Q.ja21_r = 14;
+Q.pvv_r = 10;
 Q.other_r = 5;
 !}
 go-to: election_algorithm
@@ -244,37 +259,37 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 // set congress proportion to votes
-Q.spd_r = Q.spd_votes;
-Q.z_r = Q.z_votes;
-Q.kpd_r = Q.kpd_votes;
-Q.ddp_r = Q.ddp_votes;
-Q.dvp_r = Q.dvp_votes;
-Q.dnvp_r = Q.dnvp_votes;
-Q.nsdap_r = Q.nsdap_votes;
+Q.d66_r = Q.d66_votes;
+Q.cda_r = Q.cda_votes;
+Q.gl_r = Q.gl_votes;
+Q.pvda_r = Q.pvda_votes;
+Q.vvd_r = Q.vvd_votes;
+Q.ja21_r = Q.ja21_votes;
+Q.pvv_r = Q.pvv_votes;
 Q.other_r = Q.other_votes;
 
-// The largest party can only be the NSDAP or the SPD.
-Q.largest_party = 'SPD';
-if (Q.nsdap_r >= Q.spd_r && Q.nsdap_r >= Q.kpd_r) {
-    Q.largest_party = 'NSDAP';
+// The largest party can only be the pvv or the d66.
+Q.largest_party = 'd66';
+if (Q.pvv_r >= Q.d66_r && Q.pvv_r >= Q.gl_r) {
+    Q.largest_party = 'pvv';
 }
-if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
-    Q.largest_party = 'KPD';
+if (Q.gl_r >= Q.d66_r && Q.gl_r >= Q.pvv_r) {
+    Q.largest_party = 'gl';
 }
 
 // coalitions
-Q.weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r - 3;
-Q.grand_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r;
-Q.bourgeois_coalition = Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
-Q.center_right_coalition = Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.right_coalition = Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.far_right_coalition = Q.dnvp_r + Q.nsdap_r;
-Q.left_coalition = Q.spd_r + Q.kpd_r;
+Q.weimar_coalition = Q.d66_r + Q.pvda_r + Q.cda_r - 3;
+Q.grand_coalition = Q.d66_r + Q.pvda_r + Q.cda_r + Q.vvd_r;
+Q.bourgeois_coalition = Q.pvda_r + Q.cda_r + Q.vvd_r + Q.other_r;
+Q.center_right_coalition = Q.cda_r + Q.pvda_r + Q.vvd_r + Q.other_r + Q.ja21_r;
+Q.right_coalition = Q.cda_r + Q.vvd_r + Q.other_r + Q.ja21_r;
+Q.far_right_coalition = Q.ja21_r + Q.pvv_r;
+Q.left_coalition = Q.d66_r + Q.gl_r;
 // this is an absurd concept lol
-Q.united_front_coalition = Q.spd_r + Q.kpd_r + Q.z_r + Q.ddp_r - 3;
-Q.anti_democratic_coalition = Q.kpd_r + Q.nsdap_r;
-// aka everyone except nazi, kpd, dnvp
-Q.neo_weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
+Q.united_front_coalition = Q.d66_r + Q.gl_r + Q.cda_r + Q.pvda_r - 3;
+Q.anti_democratic_coalition = Q.gl_r + Q.pvv_r;
+// aka everyone except nacdai, gl, ja21
+Q.neo_weimar_coalition = Q.d66_r + Q.pvda_r + Q.cda_r + Q.vvd_r + Q.other_r;
 !}
 
 The electoral system is essentially proportional, with the proportion of Reichstag seats roughly equal to the proportion of votes.
@@ -282,36 +297,36 @@ The electoral system is essentially proportional, with the proportion of Reichst
 **Election results:**
 
 # 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_r +]
+d66: [+ d66_r +]
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_r +]
+cda + BVP: [+ cda_r +]
 
 # 1928: 10, 1930: 13
-KPD: [+ kpd_r +]
+gl: [+ gl_r +]
 
 # 1928: 5, 1930: 4 (as DstP)
-DDP: [+ ddp_r +]
+pvda: [+ pvda_r +]
 
 # 1928: 9, 1930: 5
-DVP: [+ dvp_r +]
+vvd: [+ vvd_r +]
 
 # 1928: 14, 1930: 7
-DNVP: [+ dnvp_r +]
+ja21: [+ ja21_r +]
 
 # 1928: 3, 1930: 18
-NSDAP: [+ nsdap_r +]
+pvv: [+ pvv_r +]
 
 # 1928: 9, 1930: 10
 Other: [+ other_r +]
 
 **Potential coalitions:**
 
-Weimar Coalition (SPD + Z + DDP): [+ weimar_coalition +]
+Weimar Coalition (d66 + cda + pvda): [+ weimar_coalition +]
 
-Grand Coalition (SPD + Z + BVP + DDP + DVP): [+ grand_coalition +]
+Grand Coalition (d66 + cda + BVP + pvda + vvd): [+ grand_coalition +]
 
-Bourgeois Coalition (Z + BVP + DDP + DVP + Others): [+ bourgeois_coalition +]
+Bourgeois Coalition (cda + BVP + pvda + vvd + Others): [+ bourgeois_coalition +]
 
-Right-wing Coalition (Z + BVP + DVP + Others + DNVP): [+ right_coalition +]
+Right-wing Coalition (cda + BVP + vvd + Others + ja21): [+ right_coalition +]
 
